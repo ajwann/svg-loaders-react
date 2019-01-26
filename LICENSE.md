@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
 **Original Work** Copyright (c) 2014 Sam Herbert
+
 **Modified Work Copyright (c) 2018 Adam Wanninger**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
