@@ -1,0 +1,44 @@
+{
+  "name": "svg-loaders-react",
+  "version": "0.1.0",
+  "description": "React implementation of the SVG Loaders library by Sam Herbert",
+  "main": "dist/index.js",
+  "peerDependendies": {
+    "react": "^16.7.0"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-svg-inline": "^2.1.1",
+    "webpack": "^4.29.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "raw-loader": "^1.0.0",
+    "react-inlinesvg": "^0.8.4",
+    "svg-inline-loader": "^0.8.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [
+    "react",
+    "svgloaders",
+    "svg",
+    "loaders",
+    "loader",
+    "loading",
+    "spinners",
+    "spinner"
+  ],
+  "author": "Adam Wanninger",
+  "license": "MIT"
+}
