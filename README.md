@@ -1,4 +1,4 @@
-This is a React implimentation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
+This is a React implementation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
 ## Usage
 
