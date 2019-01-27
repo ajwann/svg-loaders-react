@@ -4,7 +4,7 @@ This is a React implementation of Sam Herberts [SVG Loaders](https://github.com/
 
 ## Importing the SVGLoaders components
 
-### Import all the loaders in a nice neat namespaced way
+### Import all the loaders in a namespaced fashion
 You can import all the loaders at once:
 ```js
 import * as SVGLoaders from 'svg-loaders-react';
