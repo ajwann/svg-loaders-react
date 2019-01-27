@@ -1,7 +1,10 @@
 This is a React implementation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
-## Usage
+# Usage
 
+## Importing the SVGLoaders components
+
+### Import all the loaders in a nice neat namespaced way
 You can import all the loaders at once:
 ```js
 import * as SVGLoaders from 'svg-loaders-react';
@@ -11,6 +14,7 @@ and use them in a namespaced manner:
 <SVGLoaders.Bars />
 ```
 
+### Import an individual loader
 You can also import a single loader:
 ```js
 import { Bars } from 'svg-loaders-react'
@@ -20,7 +24,33 @@ and use it without any fancy namespacing:
 <Bars />
 ```
 
-## Options
+## Components
+
+```<Audio />```
+
+```<BallTriangle />```
+
+```<Bars />```
+
+```<Circles />```
+
+```<Grid />```
+
+```<Hearts />```
+
+```<Oval />```
+
+```<Puff />```
+
+```<Rings />```
+
+```<SpinningCircles />```
+
+```<TailSpin />```
+
+```<ThreeDots />```
+
+# Options
 
 Each of these components wraps an [SVGInline](https://github.com/MoOx/react-svg-inline) component.
 You can pass any options to the loader components that you can an SVGInline component.
