@@ -2,7 +2,12 @@ This is a React adaptation of Sam Herberts [SVG Loaders](https://github.com/SamH
 
 # Usage
 
-## Importing the SVGLoaders components
+## Install from NPM
+```bash
+npm install svg-loaders-react
+```
+
+## Import the SVGLoaders components
 
 ### Import all the loaders in a namespaced fashion
 You can import all the loaders at once:
