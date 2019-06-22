@@ -6,4 +6,4 @@ const Circles = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default Circles;
+export { Circles };

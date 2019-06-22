@@ -6,4 +6,4 @@ const Puff = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default Puff;
+export { Puff };

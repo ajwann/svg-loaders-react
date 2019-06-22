@@ -6,4 +6,4 @@ const Grid = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default Grid;
+export { Grid };

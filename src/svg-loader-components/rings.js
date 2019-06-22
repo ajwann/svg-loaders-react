@@ -6,4 +6,4 @@ const Rings = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default Rings;
+export { Rings };

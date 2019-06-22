@@ -6,4 +6,4 @@ const Bars = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default Bars;
+export { Bars };

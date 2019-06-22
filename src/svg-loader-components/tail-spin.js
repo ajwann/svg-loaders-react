@@ -6,4 +6,4 @@ const TailSpin = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default TailSpin;
+export { TailSpin };

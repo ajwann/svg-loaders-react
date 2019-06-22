@@ -6,4 +6,4 @@ const Audio = props => (
   <SVGInline svg={image} {...props} />
 )
 
-export default Audio;
+export { Audio };

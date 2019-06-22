@@ -6,4 +6,4 @@ const Oval = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default Oval;
+export { Oval };

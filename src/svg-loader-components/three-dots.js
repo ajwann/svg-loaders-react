@@ -6,4 +6,4 @@ const ThreeDots = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default ThreeDots;
+export { ThreeDots };

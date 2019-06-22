@@ -6,4 +6,4 @@ const BallTriangle = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default BallTriangle;
+export { BallTriangle };

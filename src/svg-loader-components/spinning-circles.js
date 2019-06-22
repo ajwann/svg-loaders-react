@@ -6,4 +6,4 @@ const SpinningCircles = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default SpinningCircles;
+export { SpinningCircles };

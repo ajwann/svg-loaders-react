@@ -6,4 +6,4 @@ const Hearts = props => (
   <SVGInline svg={image} {...props} />
 );
 
-export default Hearts;
+export { Hearts };
