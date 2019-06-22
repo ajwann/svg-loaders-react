@@ -4,6 +4,6 @@ import image from './audio.svg';
 
 const Audio = props => (
   <SVGInline svg={image} {...props} />
-)
+);
 
 export { Audio };
