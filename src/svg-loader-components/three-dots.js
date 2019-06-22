@@ -1,11 +1,9 @@
-import React from 'react'
-import image from './three-dots.svg'
-import SVGInline from 'react-svg-inline'
+import React from 'react';
+import SVGInline from 'react-svg-inline';
+import image from './three-dots.svg';
 
-export class ThreeDots extends React.Component {
-  render() {
-    return(
-      <SVGInline svg={image} {...this.props} />
-    )
-  }
-}
+const ThreeDots = props => (
+  <SVGInline svg={image} {...props} />
+);
+
+export { ThreeDots };

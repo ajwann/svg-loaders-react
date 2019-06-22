@@ -1,11 +1,9 @@
-import React from 'react'
-import image from './spinning-circles.svg'
-import SVGInline from 'react-svg-inline'
+import React from 'react';
+import SVGInline from 'react-svg-inline';
+import image from './spinning-circles.svg';
 
-export class SpinningCircles extends React.Component {
-  render() {
-    return(
-      <SVGInline svg={image} {...this.props} />
-    )
-  }
-}
+const SpinningCircles = props => (
+  <SVGInline svg={image} {...props} />
+);
+
+export { SpinningCircles };

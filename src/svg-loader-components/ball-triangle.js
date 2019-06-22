@@ -1,11 +1,9 @@
-import React from 'react'
-import image from './ball-triangle.svg'
+import React from 'react';
 import SVGInline from 'react-svg-inline';
+import image from './ball-triangle.svg';
 
-export class BallTriangle extends React.Component {
-  render() {
-    return(
-      <SVGInline svg={image} {...this.props} />
-    )
-  }
-}
+const BallTriangle = props => (
+  <SVGInline svg={image} {...props} />
+);
+
+export { BallTriangle };

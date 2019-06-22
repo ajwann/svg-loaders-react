@@ -1,11 +1,9 @@
-import React from 'react'
-import image from './grid.svg'
-import SVGInline from 'react-svg-inline'
+import React from 'react';
+import SVGInline from 'react-svg-inline';
+import image from './grid.svg';
 
-export class Grid extends React.Component {
-  render() {
-    return(
-      <SVGInline svg={image} {...this.props} />
-    )
-  }
-}
+const Grid = props => (
+  <SVGInline svg={image} {...props} />
+);
+
+export { Grid };

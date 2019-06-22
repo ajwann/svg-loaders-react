@@ -1,11 +1,9 @@
-import React from 'react'
-import image from './bars.svg'
-import SVGInline from 'react-svg-inline'
+import React from 'react';
+import SVGInline from 'react-svg-inline';
+import image from './bars.svg';
 
-export class Bars extends React.Component {
-  render() {
-    return(
-      <SVGInline svg={image} {...this.props} />
-    )
-  }
-}
+const Bars = props => (
+  <SVGInline svg={image} {...props} />
+);
+
+export { Bars };

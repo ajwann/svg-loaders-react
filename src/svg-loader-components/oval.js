@@ -1,11 +1,9 @@
-import React from 'react'
-import image from './oval.svg'
-import SVGInline from 'react-svg-inline'
+import React from 'react';
+import SVGInline from 'react-svg-inline';
+import image from './oval.svg';
 
-export class Oval extends React.Component {
-  render() {
-    return(
-      <SVGInline svg={image} {...this.props} />
-    )
-  }
-}
+const Oval = props => (
+  <SVGInline svg={image} {...props} />
+);
+
+export { Oval };
