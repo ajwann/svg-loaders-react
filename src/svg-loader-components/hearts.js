@@ -1,11 +1,9 @@
-import React from 'react'
-import image from './hearts.svg'
-import SVGInline from 'react-svg-inline'
+import React from 'react';
+import SVGInline from 'react-svg-inline';
+import image from './hearts.svg';
 
-export class Hearts extends React.Component {
-  render() {
-    return(
-      <SVGInline svg={image} {...this.props} />
-    )
-  }
-}
+const Hearts = props => (
+  <SVGInline svg={image} {...props} />
+);
+
+export { Hearts };
