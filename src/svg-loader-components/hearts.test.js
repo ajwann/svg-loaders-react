@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Audio } from './audio';
+import { Hearts } from './hearts';
 
-describe('Test <Audio />', () => {
+describe('Test <Hearts />', () => {
   it('renders without crashing', () => {
-    shallow(<Audio />);
+    shallow(<Hearts />);
   });
 });

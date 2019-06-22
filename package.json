@@ -23,13 +23,14 @@
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^6.0.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "raw-loader": "^1.0.0",
     "react": "^16.7.0",
@@ -49,7 +50,10 @@
   "jest": {
     "setupFiles": [
       "./src/setupTests.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      ".+\\.(svg|png|jpg)$": "identity-obj-proxy"
+    }
   },
   "keywords": [
     "react",

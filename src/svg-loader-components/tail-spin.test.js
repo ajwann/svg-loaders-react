@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Audio } from './audio';
+import { TailSpin } from './tail-spin';
 
-describe('Test <Audio />', () => {
+describe('Test <TailSpin />', () => {
   it('renders without crashing', () => {
-    shallow(<Audio />);
+    shallow(<TailSpin />);
   });
 });

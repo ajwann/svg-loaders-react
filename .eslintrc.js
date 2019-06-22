@@ -15,6 +15,8 @@ module.exports = {
     node: true,
     browser: true,
     amd: true,
+    es6: true,
+    jest: true
   },
 
   rules: {
