@@ -43,7 +43,8 @@
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts,.tsx .",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:dev": "jest --watch",
     "start": "webpack --watch",
     "build": "webpack"
   },
