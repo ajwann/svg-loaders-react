@@ -13,14 +13,14 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
-    "babel-loader": "^7.1.5",
+    "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "enzyme": "^3.10.0",
@@ -46,7 +46,7 @@
     "test": "jest",
     "test:dev": "jest --watch",
     "start": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "jest": {
     "setupFiles": [
