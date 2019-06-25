@@ -12,8 +12,9 @@ module.exports = {
   },
 
   env: {
-    node: false,
-    browser: true
+    node: true,
+    browser: true,
+    amd: true,
   },
 
   rules: {
@@ -27,11 +28,11 @@ module.exports = {
       },
     ],
 
-    "react/jsx-filename-extension": [
+    'react/jsx-filename-extension': [
       1,
       {
-        "extensions": [".js", ".jsx"]
-      }
+        'extensions': ['.js', '.jsx'],
+      },
     ],
 
     // Not supporting nested package.json yet
@@ -51,6 +52,6 @@ module.exports = {
     'linebreak-style': 'off',
 
     // Switching off default exports
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
   },
 };

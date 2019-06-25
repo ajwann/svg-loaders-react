@@ -36,6 +36,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
+    "lint": "eslint --ext .js,.ts,.tsx .",
     "start": "webpack --watch",
     "build": "webpack"
   },
