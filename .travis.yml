@@ -1,10 +1,18 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-    - "node_modules"
+  - node_modules
 script:
-  - npm run lint
-  - npm run test
-  - npm run build
+- npm run lint
+- npm run test
+- npm run build
+deploy:
+  provider: npm
+  email: ajwann@ajwann.com
+  api_key:
+    secure: YkxXF6wD7aSq0jR9kxORYNd01dakfOGyCJnXYiZZSAZQCByKIULw3clXaUo6dIWVyOy/uMU4/sAFmov2HIzrJ4yin2AeoLUKhSPaxKa7C/7/rar1m5jgw4B5vskrCdfsdoyalbnZquWjh+hdA8YV6YMyPyrS19coXdFRFiabIPyAzljiuv+Iquips7HJQuA12FbTsrVyLYloOkUvBLMUv+0JtJxDBJPFRq9RYwt+9jrdh2YADjf2gcpUHyaw7p8gIkNRAsNyWtFi6uPJ5fOP4XWGDoKh7IUMxdP+siN3jsqYR2nPkfFpaO1S4X/4r9R3VpHln4G79B5R/l1k47ZiroHuLQMoC9azUHc+qoLnbBYcCJl9te6JItrfDB4JXqOyNuF3AF6NLhXNeywbuoxcc+ypXGOVkSgTXWbtfsVzuvAN+b5a0Hj6Fkzu5hyYkJ8a4gL/4WxsPK7GoCwzw9CbdXvQR9K3kQpeRFv1vRrdGhKjLbbU+DDZUhojxGIP8CYAJESA/fpKJ7+PiQUQj/tIfu+Hx1mAn5iZIFwKDYuEpMLPGOxIdxj4Nilb8fujCJOSrVqzpo75gpah5yjtE/1T9aRvJN8LuulbaZmJcyxtMoqGwl6KrDGhnXWzsFabZkSQypxuM1+zfJBXyyU0TAh7mx+NpF6EaWz5dXNKgjwbVYs=
+  on:
+    tags: true
+    repo: ajwann/svg-loaders-react
