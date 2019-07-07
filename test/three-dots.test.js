@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { ThreeDots } from './three-dots';
+import { ThreeDots } from '../src/svg-loader-components/three-dots';
 
 describe('Test <ThreeDots />', () => {
   it('renders without crashing', () => {

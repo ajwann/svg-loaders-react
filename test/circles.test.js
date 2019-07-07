@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { Circles } from './circles';
+import { Circles } from '../src/svg-loader-components/circles';
 
 describe('Test <Circles />', () => {
   it('renders without crashing', () => {
