@@ -70,8 +70,9 @@ Each of these components should be able to accept any [SVG tag presentation attr
 // render the Puff loader with a fill of mint green
 <Puff fill="#98ff98" />
 
-// render the Puff loader with a fille of mint green and a fill opactiy of .125
+// render the Puff loader with a fill of mint green and a fill opactiy of .125
 <Puff fill="#98ff98" fill-opacity=".125" />
 ```
+
 
 
