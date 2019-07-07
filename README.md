@@ -60,20 +60,18 @@ and use it without any fancy namespacing:
 
 # Options
 
-Each of these components wraps an [SVGInline](https://github.com/MoOx/react-svg-inline) component.
-You can pass any options to the loader components that you can an SVGInline component.
-The options are:
-```text
-className
-classSuffix
-component
-fill
-cleanup
-cleanupExceptions
-width
-height
-accessibilityLabel
-accessibilityDesc
+Each of these components should be able to accept any [SVG tag presentation attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation) as props. 
+
+# Common Usage
+```Javascript
+// render the Puff loader with a fill opacity of .125
+<Puff fill-opacity=".125" />
+
+// render the Puff loader with a fill of mint green
+<Puff fill="#98ff98" />
+
+// render the Puff loader with a fille of mint green and a fill opactiy of .125
+<Puff fill="#98ff98" fill-opacity=".125" />
 ```
-For a complete description of each option, please see the [react-svg-inline docs](https://github.com/MoOx/react-svg-inline#options-props).
+
 
