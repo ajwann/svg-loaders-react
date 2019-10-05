@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SpinningCircles = props => (
-  <svg width={58} height={58} {...props}>
+const SpinningCircles = ({className, ...props}) => (
+  <svg width={58} height={58} className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <g
       transform="translate(2 1)"
       stroke="#FFF"

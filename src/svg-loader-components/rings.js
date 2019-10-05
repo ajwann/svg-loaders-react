@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Rings = props => (
-  <svg width={45} height={45} stroke="#fff" {...props}>
+const Rings = ({className, ...props}) => (
+  <svg width={45} height={45} stroke="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <g
       fill="none"
       fillRule="evenodd"

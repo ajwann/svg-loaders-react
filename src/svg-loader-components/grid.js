@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Grid = props => (
-  <svg width={105} height={105} fill="#fff" {...props}>
+const Grid = ({className, ...props}) => (
+  <svg width={105} height={105} fill="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <circle cx={12.5} cy={12.5} r={12.5}>
       <animate
         attributeName="fill-opacity"

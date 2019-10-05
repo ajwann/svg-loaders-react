@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Oval = props => (
-  <svg width={38} height={38} stroke="#fff" {...props}>
+const Oval = ({className, ...props}) => (
+  <svg width={38} height={38} stroke="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <g
       transform="translate(1 1)"
       strokeWidth={2}

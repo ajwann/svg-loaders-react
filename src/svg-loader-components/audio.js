@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Audio = props => (
-  <svg width={55} height={80} fill="#FFF" {...props}>
+const Audio = ({className, ...props}) => (
+  <svg width={55} height={80} fill="#FFF" className={`svg-loaders-svg${className?` ${className}`:''}`} {...props}>
     <g transform="matrix(1 0 0 -1 0 80)">
       <rect width={10} height={20} rx={3}>
         <animate

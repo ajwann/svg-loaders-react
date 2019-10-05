@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Bars = props => (
-  <svg width={135} height={140} fill="#fff" {...props}>
+const Bars = ({className, ...props}) => (
+  <svg width={135} height={140} fill="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <rect y={10} width={15} height={120} rx={6}>
       <animate
         attributeName="height"

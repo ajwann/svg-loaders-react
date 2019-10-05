@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Puff = props => (
-  <svg width={44} height={44} stroke="#fff" {...props}>
+const Puff = ({className, ...props}) => (
+  <svg width={44} height={44} stroke="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <g fill="none" fillRule="evenodd" strokeWidth={2}>
       <circle cx={22} cy={22} r={1}>
         <animate

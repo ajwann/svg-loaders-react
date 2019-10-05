@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ThreeDots = props => (
-  <svg width={120} height={30} fill="#fff" {...props}>
+const ThreeDots = ({className, ...props}) => (
+  <svg width={120} height={30} fill="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <circle cx={15} cy={15} r={15}>
       <animate
         attributeName="r"

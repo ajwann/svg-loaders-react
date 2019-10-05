@@ -1,7 +1,7 @@
 import React from 'react';
 
-const TailSpin = props => (
-  <svg width={38} height={38} {...props}>
+const TailSpin = ({className, ...props}) => (
+  <svg width={38} height={38} className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <defs>
       <linearGradient
         x1="8.042%"

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const BallTriangle = props => (
-  <svg width={57} height={57} stroke="#fff" {...props}>
+const BallTriangle =({className, ...props})=> (
+  <svg width={57} height={57} stroke="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
     <g
       transform="translate(1 1)"
       strokeWidth={2}
