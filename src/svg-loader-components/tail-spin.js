@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TailSpin = ({ className, ...props }) => (
-  <svg width={38} height={38} className={`svg-loaders-svg${ className ? ` ${className}`:''}` }  {...props}>
+  <svg width={38} height={38} className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <defs>
       <linearGradient
         x1="8.042%"
@@ -45,12 +45,12 @@ const TailSpin = ({ className, ...props }) => (
   </svg>
 );
 
-TailSpin.propTypes={
+TailSpin.propTypes = {
   className: PropTypes.string,
-}
+};
 
-TailSpin.defaultProps={
+TailSpin.defaultProps = {
   className: undefined,
-}
+};
 
 export { TailSpin };

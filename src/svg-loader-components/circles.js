@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Circles = ({ className, ...props }) => (
-  <svg width={135} height={135} fill="#fff" className={`svg-loaders-svg${ className ? ` ${className}`:''}` }  {...props}>
+  <svg width={135} height={135} fill="#fff" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
       <animateTransform
         attributeName="transform"
@@ -26,12 +26,12 @@ const Circles = ({ className, ...props }) => (
   </svg>
 );
 
-Circles.propTypes={
+Circles.propTypes = {
   className: PropTypes.string,
-}
+};
 
-Circles.defaultProps={
+Circles.defaultProps = {
   className: undefined,
-}
+};
 
 export { Circles };

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Grid = ({ className, ...props }) => (
-  <svg width={105} height={105} fill="#fff" className={`svg-loaders-svg${ className ? ` ${className}`:''}`}  {...props}>
+  <svg width={105} height={105} fill="#fff" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <circle cx={12.5} cy={12.5} r={12.5}>
       <animate
         attributeName="fill-opacity"
@@ -96,12 +96,12 @@ const Grid = ({ className, ...props }) => (
   </svg>
 );
 
-Grid.propTypes={
+Grid.propTypes = {
   className: PropTypes.string,
-}
+};
 
-Grid.defaultProps={
+Grid.defaultProps = {
   className: undefined,
-}
+};
 
 export { Grid };

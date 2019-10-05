@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Rings = ({ className, ...props }) => (
-  <svg width={45} height={45} stroke="#fff" className={`svg-loaders-svg${ className ? ` ${className}`:''}` }  {...props}>
+  <svg width={45} height={45} stroke="#fff" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g
       fill="none"
       fillRule="evenodd"
@@ -75,12 +75,12 @@ const Rings = ({ className, ...props }) => (
   </svg>
 );
 
-Rings.propTypes={
+Rings.propTypes = {
   className: PropTypes.string,
-}
+};
 
-Rings.defaultProps={
+Rings.defaultProps = {
   className: undefined,
-}
+};
 
 export { Rings };
