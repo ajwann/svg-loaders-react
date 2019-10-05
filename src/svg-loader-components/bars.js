@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Bars = ({className, ...props}) => (
-  <svg width={135} height={140} fill="#fff" className={`svg-loaders-svg${className?` ${className}`:''}`}  {...props}>
+const Bars = ({ className, ...props }) => (
+  <svg width={135} height={140} fill="#fff" className={`svg-loaders-svg${ className ? ` ${className}`:''}` }  {...props}>
     <rect y={10} width={15} height={120} rx={6}>
       <animate
         attributeName="height"
@@ -94,5 +95,13 @@ const Bars = ({className, ...props}) => (
     </rect>
   </svg>
 );
+
+Bars.propTypes={
+  className: PropTypes.string,
+}
+
+Bars.defaultProps={
+  className: undefined,
+}
 
 export { Bars };
