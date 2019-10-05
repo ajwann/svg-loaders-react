@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const BallTriangle = props => (
-  <svg width={57} height={57} stroke="#fff" {...props}>
+const BallTriangle = ({ className, ...props }) => (
+  <svg width={57} height={57} stroke="#fff" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g
       transform="translate(1 1)"
       strokeWidth={2}
@@ -71,5 +72,13 @@ const BallTriangle = props => (
     </g>
   </svg>
 );
+
+BallTriangle.propTypes = {
+  className: PropTypes.string,
+};
+
+BallTriangle.defaultProps = {
+  className: undefined,
+};
 
 export { BallTriangle };
