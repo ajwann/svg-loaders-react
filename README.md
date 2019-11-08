@@ -64,14 +64,14 @@ Each of these components should be able to accept any [SVG tag presentation attr
 
 # Common Usage
 ```Javascript
-// render the Puff loader with a fill opacity of .125
-<Puff fill-opacity=".125" />
+// render the Puff loader with a stroke opacity of .125
+<Puff strokeOpacity=".125" />
 
-// render the Puff loader with a fill of mint green
-<Puff fill="#98ff98" />
+// render the Puff loader with a stroke of mint green
+<Puff stroke="#98ff98" />
 
-// render the Puff loader with a fill of mint green and a fill opactiy of .125
-<Puff fill="#98ff98" fill-opacity=".125" />
+// render the Puff loader with a stroke of mint green and a stroke opactiy of .125
+<Puff stroke="#98ff98" strokeOpacity=".125"/>
 ```
 
 
