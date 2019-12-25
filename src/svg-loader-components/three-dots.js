@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ThreeDots = ({ className, ...props }) => (
-  <svg width={120} height={30} fill="#fff" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
+  <svg width={120} height={30} fill="#fff" viewBox="0 0 120 30" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <circle cx={15} cy={15} r={15}>
       <animate
         attributeName="r"

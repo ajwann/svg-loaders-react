@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Puff = ({ className, ...props }) => (
-  <svg width={44} height={44} stroke="#fff" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
+  <svg width={44} height={44} stroke="#fff" viewBox="0 0 44 44" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g fill="none" fillRule="evenodd" strokeWidth={2}>
       <circle cx={22} cy={22} r={1}>
         <animate
