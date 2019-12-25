@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Oval = ({ className, ...props }) => (
-  <svg width={38} height={38} stroke="#fff" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
+  <svg width={38} height={38} stroke="#fff" viewBox="0 0 38 38" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g
       transform="translate(1 1)"
       strokeWidth={2}
