@@ -28,7 +28,7 @@ import SvgLoaders from 'svg-loaders-react';
 
 and use them in a namespaced manner:
 
-```ts
+```tsx
 <SvgLoaders.Bars />
 ```
 
@@ -42,13 +42,13 @@ import { Bars } from 'svg-loaders-react'
 
 and use it without any fancy namespacing:
 
-```ts
+```tsx
 <Bars />
 ```
 
 ### Components
 
-```ts
+```tsx
 <Audio />
 <BallTriangle />
 <Bars />
@@ -69,7 +69,7 @@ Each of these components should be able to accept any [SVG tag presentation attr
 
 ## Common Usage
 
-```ts
+```tsx
 // render the Puff loader with a stroke opacity of .125
 <Puff strokeOpacity=".125" />
 
@@ -77,5 +77,5 @@ Each of these components should be able to accept any [SVG tag presentation attr
 <Puff stroke="#98ff98" />
 
 // render the Puff loader with a stroke of mint green and a stroke opactiy of .125
-<Puff stroke="#98ff98" strokeOpacity=".125"/>
+<Puff stroke="#98ff98" strokeOpacity=".125" />
 ```
