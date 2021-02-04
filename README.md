@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ajwann/svg-loaders-react.svg?branch=master)](https://travis-ci.org/ajwann/svg-loaders-react)
 [![npm version](https://badge.fury.io/js/svg-loaders-react.svg)](https://badge.fury.io/js/svg-loaders-react)
+![Unit Test CI](https://github.com/dkress59/svg-loaders-react/workflows/Unit%20Test%20CI/badge.svg)
 
 This is a zero-dependency React adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library. **Now also with TypeScript support.**
 

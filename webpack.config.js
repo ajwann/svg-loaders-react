@@ -53,22 +53,18 @@ module.exports = (env, argv) => {
 				__dirname,
 				'src/components/three-dots.tsx',
 			),
-		},/* 
-		output: {
-			filename: '[name].js',
-			path: path.resolve(__dirname, 'dist'),
-		}, */
+		},
 		resolve: {
 			extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
 		},
 		module: {
 			rules: [
 				{
-					test: /\.(js|jsx)?$/,
+					test: /\.jsx?$/,
 					use: 'babel-loader',
 				},
 				{
-					test: /\.(ts|tsx)?$/,
+					test: /\.tsx?$/,
 					use: [
 						{
 							loader: 'babel-loader',

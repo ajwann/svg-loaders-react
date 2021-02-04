@@ -11,7 +11,7 @@ import SpinningCircles from './components/spinning-circles'
 import TailSpin from './components/tail-spin'
 import ThreeDots from './components/three-dots'
 
-const SvgLoaders = {
+export default {
 	Audio,
 	BallTriangle,
 	Bars,
@@ -25,4 +25,3 @@ const SvgLoaders = {
 	TailSpin,
 	ThreeDots,
 }
-export default SvgLoaders
