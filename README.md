@@ -1,69 +1,74 @@
+# React SVG Loaders
+
 [![Build Status](https://travis-ci.org/ajwann/svg-loaders-react.svg?branch=master)](https://travis-ci.org/ajwann/svg-loaders-react)
 [![npm version](https://badge.fury.io/js/svg-loaders-react.svg)](https://badge.fury.io/js/svg-loaders-react)
 
-This is a zero-dependency React adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
+This is a zero-dependency React adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library. **Now also with TypeScript support.**
 
-# Usage
+## Usage
 
-## Install from NPM
+### Install from NPM
+
+```bash
+yarn add svg-loaders-react
+```
+
 ```bash
 npm install svg-loaders-react
 ```
 
-## Import the SVGLoaders components
-
 ### Import all the loaders in a namespaced fashion
+
 You can import all the loaders at once:
-```js
-import * as SVGLoaders from 'svg-loaders-react';
+
+```ts
+import SvgLoaders from 'svg-loaders-react';
 ```
+
 and use them in a namespaced manner:
-```js
-<SVGLoaders.Bars />
+
+```ts
+<SvgLoaders.Bars />
 ```
 
 ### Import an individual loader
+
 You can also import a single loader:
-```js
+
+```ts
 import { Bars } from 'svg-loaders-react'
 ```
+
 and use it without any fancy namespacing:
-```js
+
+```ts
 <Bars />
 ```
 
-## Components
+### Components
 
-```<Audio />```
+```ts
+<Audio />
+<BallTriangle />
+<Bars />
+<Circles />
+<Grid />
+<Hearts />
+<Oval />
+<Puff />
+<Rings />
+<SpinningCircles />
+<TailSpin />
+<ThreeDots />
+```
 
-```<BallTriangle />```
+## Options
 
-```<Bars />```
+Each of these components should be able to accept any [SVG tag presentation attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation) as props.
 
-```<Circles />```
+## Common Usage
 
-```<Grid />```
-
-```<Hearts />```
-
-```<Oval />```
-
-```<Puff />```
-
-```<Rings />```
-
-```<SpinningCircles />```
-
-```<TailSpin />```
-
-```<ThreeDots />```
-
-# Options
-
-Each of these components should be able to accept any [SVG tag presentation attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation) as props. 
-
-# Common Usage
-```Javascript
+```ts
 // render the Puff loader with a stroke opacity of .125
 <Puff strokeOpacity=".125" />
 
@@ -73,6 +78,3 @@ Each of these components should be able to accept any [SVG tag presentation attr
 // render the Puff loader with a stroke of mint green and a stroke opactiy of .125
 <Puff stroke="#98ff98" strokeOpacity=".125"/>
 ```
-
-
-

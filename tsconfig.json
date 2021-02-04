@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"jsx": "react",
+		"lib": ["ESNext", "DOM"],
+		"moduleResolution": "node",
+		"module": "ESNext",
+		"resolveJsonModule": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"target": "ESNext",
+		"baseUrl": ".",
+		"outDir": "./dist/"
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		".jest/setupTests.ts"
+	]
+}

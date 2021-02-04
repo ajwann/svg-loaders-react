@@ -1,1 +1,0 @@
-export * from './svg-loader-components/example.js'
