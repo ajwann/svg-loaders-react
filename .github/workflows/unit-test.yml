@@ -4,7 +4,7 @@ on:
     push:
         branches: [master]
     pull_request:
-        branches: [master, /^dependabot\/*/]
+        branches: [master, 'dependabot/*']
 
 jobs:
     build:
