@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/ajwann/svg-loaders-react.svg?branch=master)](https://travis-ci.org/ajwann/svg-loaders-react)
 [![npm version](https://badge.fury.io/js/svg-loaders-react.svg)](https://badge.fury.io/js/svg-loaders-react)
 
 This is a zero-dependency React adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
