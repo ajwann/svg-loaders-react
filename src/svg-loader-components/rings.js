@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Rings = ({ className, ...props }) => (
+const Rings = ({
+  className = undefined, // String
+  ...props
+}) => (
   <svg width={45} height={45} stroke="#fff" viewBox="0 0 45 45" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g
       fill="none"
@@ -74,13 +76,5 @@ const Rings = ({ className, ...props }) => (
     </g>
   </svg>
 );
-
-Rings.propTypes = {
-  className: PropTypes.string,
-};
-
-Rings.defaultProps = {
-  className: undefined,
-};
 
 export { Rings };
