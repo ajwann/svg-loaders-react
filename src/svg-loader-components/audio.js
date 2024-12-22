@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Audio = ({ className, ...props }) => (
+const Audio = ({
+  className = undefined, // String
+  ...props
+}) => (
   <svg width={55} height={80} fill="#FFF" viewBox="0 0 55 80" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g transform="matrix(1 0 0 -1 0 80)">
       <rect width={10} height={20} rx={3}>
@@ -47,13 +49,5 @@ const Audio = ({ className, ...props }) => (
     </g>
   </svg>
 );
-
-Audio.propTypes = {
-  className: PropTypes.string,
-};
-
-Audio.defaultProps = {
-  className: undefined,
-};
 
 export { Audio };

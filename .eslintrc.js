@@ -55,5 +55,9 @@ module.exports = {
 
     // Switching off default exports
     'import/prefer-default-export': 'off',
+
+    // Switching off prop-types, which is disabled in React 18 and removed in React 19
+    // See https://react.dev/blog/2024/04/25/react-19-upgrade-guide#removed-proptypes-and-defaultprops
+    "react/prop-types": "off"
   },
 };

@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Oval = ({ className, ...props }) => (
+const Oval = ({
+  className = undefined, // String
+  ...props
+}) => (
   <svg width={38} height={38} stroke="#fff" viewBox="0 0 38 38" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g
       transform="translate(1 1)"
@@ -23,14 +25,5 @@ const Oval = ({ className, ...props }) => (
     </g>
   </svg>
 );
-
-
-Oval.propTypes = {
-  className: PropTypes.string,
-};
-
-Oval.defaultProps = {
-  className: undefined,
-};
 
 export { Oval };

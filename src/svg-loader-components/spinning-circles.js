@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const SpinningCircles = ({ className, ...props }) => (
+const SpinningCircles = ({
+  className = undefined, // String
+  ...props
+}) => (
   <svg width={58} height={58} viewBox="0 0 58 58" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
     <g
       transform="translate(2 1)"
@@ -93,13 +95,5 @@ const SpinningCircles = ({ className, ...props }) => (
     </g>
   </svg>
 );
-
-SpinningCircles.propTypes = {
-  className: PropTypes.string,
-};
-
-SpinningCircles.defaultProps = {
-  className: undefined,
-};
 
 export { SpinningCircles };
