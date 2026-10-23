@@ -1,7 +1,8 @@
 name: Publish Package to npmjs
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   build:
@@ -17,6 +18,12 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - run: npm test
+      - name: Verify tag matches package.json version
+        run: |
+          if [ "${GITHUB_REF_NAME#v}" != "$(node -p "require('./package.json').version")" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match package.json version" >&2
+            exit 1
+          fi
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
