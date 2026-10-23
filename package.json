@@ -7,7 +7,7 @@
     "url": "https://github.com/ajwann/svg-loaders-react"
   },
   "main": "dist/index.js",
-  "peerDependendies": {
+  "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
   },
