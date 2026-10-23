@@ -1,4 +1,6 @@
-[![npm version](https://badge.fury.io/js/svg-loaders-react.svg)](https://badge.fury.io/js/svg-loaders-react)
+[![Tests](https://github.com/ajwann/svg-loaders-react/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/ajwann/svg-loaders-react/actions/workflows/test.yml)
+[![npm version](https://img.shields.io/npm/v/svg-loaders-react.svg)](https://www.npmjs.com/package/svg-loaders-react)
+[![License: MIT](https://img.shields.io/npm/l/svg-loaders-react.svg)](https://github.com/ajwann/svg-loaders-react/blob/master/LICENSE.md)
 
 This is a zero-dependency React adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
