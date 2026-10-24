@@ -1,5 +1,25 @@
+```text
+         ...............
+      ....             ....
+    ...                   ...
+  ...      ooooooooooo      ...
+ ..     oooo         oooo     ..
+ .     oo               oo     ..
+..    oo     @@@@@@@@    oo     .
+.     o     @@      @@    oo    ..
+.     o     @@ @@    @     o     .
+..    oo     @@@     @     o     .
+ .     oo           @@    oo    ..
+ ..     oooo     oo@@    oo     .
+  ...      ooooooo      oo     ..
+    ...               ooo     ..
+      ......      ooooo     ...
+           ....oooo       ...
+                       ....
+```
+
 [![Tests](https://github.com/ajwann/svg-loaders-react/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/ajwann/svg-loaders-react/actions/workflows/test.yml)
-[![npm version](https://img.shields.io/npm/v/svg-loaders-react.svg)](https://www.npmjs.com/package/svg-loaders-react)
+[![version](https://img.shields.io/github/v/tag/ajwann/svg-loaders-react?label=version&sort=semver)](https://github.com/ajwann/svg-loaders-react/tags)
 [![npm](https://img.shields.io/badge/npm-svg--loaders--react-CB3837?logo=npm)](https://www.npmjs.com/package/svg-loaders-react)
 [![License: MIT](https://img.shields.io/npm/l/svg-loaders-react.svg)](https://github.com/ajwann/svg-loaders-react/blob/master/LICENSE.md)
 
