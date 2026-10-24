@@ -20,8 +20,8 @@
 
 [![Tests](https://github.com/ajwann/svg-loaders-react/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/ajwann/svg-loaders-react/actions/workflows/test.yml)
 [![version](https://img.shields.io/github/v/tag/ajwann/svg-loaders-react?label=version&sort=semver)](https://github.com/ajwann/svg-loaders-react/tags)
-[![npm](https://img.shields.io/badge/npm-svg--loaders--react-CB3837?logo=npm)](https://www.npmjs.com/package/svg-loaders-react)
 [![License: MIT](https://img.shields.io/npm/l/svg-loaders-react.svg)](https://github.com/ajwann/svg-loaders-react/blob/master/LICENSE.md)
+[![npm](https://img.shields.io/badge/npm-svg--loaders--react-CB3837?logo=npm)](https://www.npmjs.com/package/svg-loaders-react)
 
 This is a zero-dependency React adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
