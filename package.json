@@ -38,7 +38,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "webpack": "^5.112.2",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^7.2.3"
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts,.tsx .",
