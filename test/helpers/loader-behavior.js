@@ -2,6 +2,8 @@ import React, { StrictMode } from 'react';
 import { render } from '@testing-library/react';
 import { renderToStaticMarkup } from 'react-dom/server.node';
 
+const REACT_MAJOR = Number(React.version.split('.')[0]);
+
 const getSvg = (container) => container.querySelector('svg');
 
 // Shared behavior suite run against every loader component.
@@ -74,11 +76,26 @@ export default function describeLoader(name, Component, defaults) {
       expect(onClick).toHaveBeenCalledTimes(1);
     });
 
-    it('forwards a ref to the root <svg> (React 19 ref-as-prop)', () => {
-      const ref = React.createRef();
-      render(<Component ref={ref} />);
-      expect(ref.current).toBeInstanceOf(SVGSVGElement);
-    });
+    if (REACT_MAJOR >= 19) {
+      it('forwards a ref to the root <svg> (React 19 ref-as-prop)', () => {
+        const ref = React.createRef();
+        render(<Component ref={ref} />);
+        expect(ref.current).toBeInstanceOf(SVGSVGElement);
+      });
+    } else {
+      it('does not receive a ref (React 18 function components)', () => {
+        const error = jest.spyOn(console, 'error').mockImplementation(() => {});
+        try {
+          const ref = React.createRef();
+          render(<Component ref={ref} />);
+          expect(ref.current).toBeNull();
+          const messages = error.mock.calls.map((args) => args.map(String).join(' '));
+          expect(messages.some((m) => m.includes('Function components cannot be given refs'))).toBe(true);
+        } finally {
+          error.mockRestore();
+        }
+      });
+    }
 
     it('contains SVG animation elements', () => {
       const { container } = render(<Component />);

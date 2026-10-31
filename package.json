@@ -1,6 +1,6 @@
 {
   "name": "svg-loaders-react",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "React implementation of the SVG Loaders library by Sam Herbert",
   "repository": {
     "type": "git",
@@ -8,8 +8,8 @@
   },
   "main": "dist/index.js",
   "peerDependencies": {
-    "react": ">=19",
-    "react-dom": ">=19"
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
