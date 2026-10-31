@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { Rings } from '../src/svg-loader-components/rings';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <Rings />', () => {
-  it('renders without crashing', () => {
-    shallow(<Rings />);
-  });
-  it('viewBox property is defined', () => {
-    const RingsComponent = mount(<Rings />).find('svg');
-    expect(RingsComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('Rings', Rings, {
+  width: '45',
+  height: '45',
+  stroke: '#fff',
+  viewBox: '0 0 45 45',
 });

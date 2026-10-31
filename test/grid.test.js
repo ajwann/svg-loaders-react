@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { Grid } from '../src/svg-loader-components/grid';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <Grid />', () => {
-  it('renders without crashing', () => {
-    shallow(<Grid />);
-  });
-  it('viewBox property is defined', () => {
-    const GridComponent = mount(<Grid />).find('svg');
-    expect(GridComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('Grid', Grid, {
+  width: '105',
+  height: '105',
+  fill: '#fff',
+  viewBox: '0 0 105 105',
 });

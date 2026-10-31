@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { BallTriangle } from '../src/svg-loader-components/ball-triangle';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <BallTriangle />', () => {
-  it('renders without crashing', () => {
-    shallow(<BallTriangle />);
-  });
-  it('viewBox property is defined', () => {
-    const BallTriangleComponent = mount(<BallTriangle />).find('svg');
-    expect(BallTriangleComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('BallTriangle', BallTriangle, {
+  width: '57',
+  height: '57',
+  stroke: '#fff',
+  viewBox: '0 0 57 57',
 });

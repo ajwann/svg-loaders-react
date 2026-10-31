@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { Audio } from '../src/svg-loader-components/audio';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <Audio />', () => {
-  it('renders without crashing', () => {
-    shallow(<Audio />);
-  });
-  it('viewBox property is defined', () => {
-    const AudioComponent = mount(<Audio />).find('svg');
-    expect(AudioComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('Audio', Audio, {
+  width: '55',
+  height: '80',
+  fill: '#FFF',
+  viewBox: '0 0 55 80',
 });

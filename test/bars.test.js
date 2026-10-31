@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { Bars } from '../src/svg-loader-components/bars';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <Bars />', () => {
-  it('renders without crashing', () => {
-    shallow(<Bars />);
-  });
-  it('viewBox property is defined', () => {
-    const BarsComponent = mount(<Bars />).find('svg');
-    expect(BarsComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('Bars', Bars, {
+  width: '135',
+  height: '140',
+  fill: '#fff',
+  viewBox: '0 0 135 140',
 });

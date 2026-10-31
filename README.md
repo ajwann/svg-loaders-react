@@ -27,6 +27,11 @@ This is a zero-dependency React adaptation of Sam Herberts [SVG Loaders](https:/
 
 # Usage
 
+## Requirements
+React 19 or newer (`react` and `react-dom` are peer dependencies).
+
+Still on React 18? Use the 3.x line: `npm install svg-loaders-react@3`.
+
 ## Install from NPM
 ```bash
 npm install svg-loaders-react

@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { ThreeDots } from '../src/svg-loader-components/three-dots';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <ThreeDots />', () => {
-  it('renders without crashing', () => {
-    shallow(<ThreeDots />);
-  });
-  it('viewBox property is defined', () => {
-    const ThreeDotsComponent = mount(<ThreeDots />).find('svg');
-    expect(ThreeDotsComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('ThreeDots', ThreeDots, {
+  width: '120',
+  height: '30',
+  fill: '#fff',
+  viewBox: '0 0 120 30',
 });

@@ -1,14 +1,8 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { TailSpin } from '../src/svg-loader-components/tail-spin';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <TailSpin />', () => {
-  it('renders without crashing', () => {
-    shallow(<TailSpin />);
-  });
-  it('viewBox property is defined', () => {
-    const TailSpinComponent = mount(<TailSpin />).find('svg');
-    expect(TailSpinComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('TailSpin', TailSpin, {
+  width: '38',
+  height: '38',
+  viewBox: '0 0 38 38',
 });
