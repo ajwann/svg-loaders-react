@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Oval /> matches the markup snapshot 1`] = `
+<svg
+  class="svg-loaders-svg"
+  height="38"
+  stroke="#fff"
+  viewBox="0 0 38 38"
+  width="38"
+>
+  <g
+    fill="none"
+    fill-rule="evenodd"
+    stroke-width="2"
+    transform="translate(1 1)"
+  >
+    <circle
+      cx="18"
+      cy="18"
+      r="18"
+      stroke-opacity="0.5"
+    />
+    <path
+      d="M36 18c0-9.94-8.06-18-18-18"
+    >
+      <animatetransform
+        attributeName="transform"
+        dur="1s"
+        from="0 18 18"
+        repeatCount="indefinite"
+        to="360 18 18"
+        type="rotate"
+      />
+    </path>
+  </g>
+</svg>
+`;

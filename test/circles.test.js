@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { Circles } from '../src/svg-loader-components/circles';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <Circles />', () => {
-  it('renders without crashing', () => {
-    shallow(<Circles />);
-  });
-  it('viewBox property is defined', () => {
-    const CirclesComponent = mount(<Circles />).find('svg');
-    expect(CirclesComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('Circles', Circles, {
+  width: '135',
+  height: '135',
+  fill: '#fff',
+  viewBox: '0 0 135 135',
 });

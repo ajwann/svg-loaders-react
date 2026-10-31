@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { Puff } from '../src/svg-loader-components/puff';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <Puff />', () => {
-  it('renders without crashing', () => {
-    shallow(<Puff />);
-  });
-  it('viewBox property is defined', () => {
-    const PuffComponent = mount(<Puff />).find('svg');
-    expect(PuffComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('Puff', Puff, {
+  width: '44',
+  height: '44',
+  stroke: '#fff',
+  viewBox: '0 0 44 44',
 });

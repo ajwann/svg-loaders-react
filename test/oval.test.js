@@ -1,14 +1,9 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { Oval } from '../src/svg-loader-components/oval';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <Oval />', () => {
-  it('renders without crashing', () => {
-    shallow(<Oval />);
-  });
-  it('viewBox property is defined', () => {
-    const OvalComponent = mount(<Oval />).find('svg');
-    expect(OvalComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('Oval', Oval, {
+  width: '38',
+  height: '38',
+  stroke: '#fff',
+  viewBox: '0 0 38 38',
 });

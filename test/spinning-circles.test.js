@@ -1,14 +1,8 @@
-import React from 'react';
-import { shallow, mount } from 'enzyme';
-
 import { SpinningCircles } from '../src/svg-loader-components/spinning-circles';
+import describeLoader from './helpers/loader-behavior';
 
-describe('Test <SpinningCircles />', () => {
-  it('renders without crashing', () => {
-    shallow(<SpinningCircles />);
-  });
-  it('viewBox property is defined', () => {
-    const SpinningCirclesComponent = mount(<SpinningCircles />).find('svg');
-    expect(SpinningCirclesComponent.prop('viewBox')).toBeDefined();
-  });
+describeLoader('SpinningCircles', SpinningCircles, {
+  width: '58',
+  height: '58',
+  viewBox: '0 0 58 58',
 });
